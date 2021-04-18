@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Roboto', 'Segoe UI', Tahoma, sans-serif;
+}
+body {
+    background: #3e4046;
+    font-size: 14px;
+    line-height: 22px;
+}
+.resume_wrapper {
+    width: 800px;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+    background: #fff;
+}
+.resume_wrapper .resume_left{
+    padding: 40px 40px;
+}
+.resume_wrapper .resume_right{
+    padding: 110px 50px;
+}
+.resume_wrapper .resume_right{
+    width: 280px;
+    background: #1b2c53;
+}
+.resume_wrapper .resume_namerole .resume_name{
+	font-size: 25px;
+	color: black;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+.resume_wrapper .resume_left .resume_title{
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+.resume_wrapper .resume_right .resume_title{
+    color: #fff;
+	font-weight: 700;
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.resume_wrapper .resume_right .resume_info{
+	color: #fff;
+    font-size: 12px;
+}  
+.resume_wrapper .resume_left .resume_item{
+	padding: 15px 0;
+	border-bottom: 1px solid white;
+}
+.resume_wrapper .resume_right .resume_item{
+	padding: 15px 0;
+	border-bottom: 1px solid #1b2c53;
+}
+.resume_wrapper  .resume_item:last-child{
+	border-bottom: 0;
+}
+.resume_wrapper .resume_left .resume_namerole .resume_role{
+	font-size: 9px;
+    text-transform: uppercase;
+    color: #49484d;
+}
+.resume_wrapper .resume_right .resume_skills .skill_bar{
+	position: relative;
+	width: 180px;
+    height: 4px;
+    background: #465370;
+}
+.resume_wrapper .resume_right .resume_skills .skill_bar span{	
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+.resume_wrapper .resume_right .resume_skills .skill_list{
+	margin-bottom: 10px;
+}
+.resume_wrapper .resume_right .resume_languages .language_bar{
+	position: relative;
+	width: 180px;
+    height: 4px;
+    background: #465370;
+}
+.resume_wrapper .resume_right .resume_languages .language_bar span{	
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	width: 100%;
+	height: 100%;
+}
+.resume_wrapper .resume_right .resume_languages .language_list{
+	margin-bottom: 10px;
+}
+.resume_wrapper .resume_left{
+	width: 65%;
+	color: #26252d;
+}
+.resume_wrapper .resume_left .resume_item .resume_title{
+	color: #26252d;
+}
+.resume_wrapper .resume_left .resume_profile{
+    font-weight:500;
+	font-size: 11.5px;
+    margin-bottom: none;
+}
+.resume_wrapper .resume_left .resume_experience .experience_list{
+    margin-bottom: 15px;
+}
+.resume_wrapper .resume_left .bold{
+    font-weight:700;
+}
+.resume_wrapper .resume_left .date{
+    font-size: 9px;
+    color: rgb(109, 104, 104);
+    text-transform: uppercase;
+}
+.resume_wrapper .resume_left .resume_experience .experience_list ul li{
+    font-weight:500;
+	font-size: 11.5px;
+    list-style-type:disc; 
+    vertical-align: top;
+}
+.resume_wrapper .resume_left .resume_experience .experience_list ul{
+    padding-left: 30px;
+}
+@media screen and (max-width: 800px){
+	.resume_wrapper{
+		width: 95%;
+		margin: 10px auto;
+		flex-direction: column;
+	}
+	.resume_wrapper .resume_left,
+	.resume_wrapper .resume_right{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 424px){
+	.resume_wrapper .resume_left{
+		padding: 20px 30px;
+	}
+}
+
